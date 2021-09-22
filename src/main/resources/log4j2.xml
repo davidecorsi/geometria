@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT" />
+		<File name="rettangolo" fileName="logs/rettangolo.log" />
+		<File name="quadrato" fileName="logs/quadrato.log" />
+	</Appenders>
+	<Loggers>
+		<Logger name="it.partec.geometria.figura.Rettangolo"
+			level="trace" additivity=false>
+			<AppenderRef ref="rettangolo" />
+		</Logger>
+		<Logger name="it.partec.geometria.figura.Quadrato"
+			level="trace" additivity=false>
+			<AppenderRef ref="quadrato" />
+		</Logger>
+		<Root level="error">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</Configuration>
