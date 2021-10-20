@@ -17,6 +17,7 @@ public class Main {
 			logger.info("Costruzione secondo rettangolo");
 			rettangolo2 = new Rettangolo(3, -1);
 		} catch(FiguraException e) {
+			logger.error("Errore nella costruzione del rettangolo 2", e);
 		}
 		logger.info("Costruzione primo quadrato");
 		Quadrato quadrato1 = new Quadrato(3);
@@ -25,6 +26,7 @@ public class Main {
 			logger.info("Costruzione secondo quadrato");
 			quadrato2 = new Quadrato(-1);
 		} catch(FiguraException e) {
+			logger.error("Errore nella costruzione quadrato 2", e);
 		}
 		rettangolo1.haPerimetroMaggiore(quadrato1);
 		quadrato1.haAreaMaggiore(rettangolo1);

@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Quadrato extends Rettangolo {
 
-	private static final Logger logger = LogManager.getLogger(Rettangolo.class);
+	private static final Logger logger = LogManager.getLogger(Quadrato.class);
 
 	public Quadrato(double lato) {
 		super(lato, lato);
