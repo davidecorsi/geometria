@@ -20,10 +20,10 @@ public class Quadrato extends Rettangolo {
 	}
 
 	public void setBase(double lato) {
-		super.setBase(lato);
+		setLato(lato);
 	}
 
 	public void setAltezza(double lato) {
-		super.setAltezza(lato);
+		setLato(lato);
 	}
 }
