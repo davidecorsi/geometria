@@ -31,13 +31,13 @@ public class Quadrato extends Rettangolo {
 
 	public void setBase(double lato) {
 		logger.trace("Inizio setBase Quadrato");
-		super.setBase(lato);
+		setLato(lato);
 		logger.debug("Fine setBase Quadrato");
 	}
 
 	public void setAltezza(double lato) {
 		logger.trace("Inizio setAltezza Quadrato");
-		super.setAltezza(lato);
+		setLato(lato);
 		logger.debug("Fine setAltezza Quadrato");
 	}
 }
